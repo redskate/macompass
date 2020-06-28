@@ -1,0 +1,53 @@
+{
+    "title": "Product Startup",
+    "name": "product-startup-template",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node_modules/.bin/gulp watch"
+    },
+    "description": "Static landing page for the product startups",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template",
+        "mustache"
+    ],
+    "homepage": "https://github.com/MbanqLabs/product-startup-template",
+    "bugs": {
+        "url": "https://github.com/MbanqLabs/product-startup-template/issues",
+        "email": "labs@mbanq.com"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Mbanq Labs",
+        "email": "labs@mbanq.com",
+        "url": "https://labs.mbanq.io"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MbanqLabs/product-startup-template.git"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "5.10.2",
+        "bootstrap": "4.3.1",
+        "jquery": "3.4.1",
+        "jquery.easing": "^1.4.1",
+        "mustache": "^3.1.0"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.7",
+        "del": "5.1.0",
+        "gulp": "4.0.2",
+        "gulp-autoprefixer": "7.0.0",
+        "gulp-clean-css": "4.2.0",
+        "gulp-header": "2.0.9",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "4.0.2",
+        "gulp-uglify": "3.0.2",
+        "merge-stream": "2.0.0"
+    }
+}

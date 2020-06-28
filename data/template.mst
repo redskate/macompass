@@ -1,0 +1,241 @@
+{{#main}}
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src={{logo}} width="50px" />
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  {{#headerSection}}
+  <header class="masthead">
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="./img/main.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">{{startupName}}</h1>
+          <p class="lead mb-5">{{vision}}</p>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">{{ buttonTitle }}</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  {{/headerSection}}
+
+  <!-- About Section -->
+  {{#aboutSection}}
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">{{ title }}</h2>
+          <p class="text-white-50">
+            {{ description }}
+          </p>
+        </div>
+      </div>
+
+      <div class="row pb-4">
+        {{#opportunities}}
+        <div class="col">
+          <div class="card mx-auto h-100" style="width: 18rem; text-align: center; background-color: #313131;">
+            <img class="mx-auto pt-4" width="80px" src="{{ img }}" alt="{{ description }}">
+            <div class="card-body d-flex flex-column text-white">
+              <div class="">
+                <h2 class="card-title">{{ headline }}</h2>
+                <hr class="my-4">
+                <h4 class="card-text">{{ description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/opportunities}}
+      </div>
+
+    </div>
+  </section>
+  {{/aboutSection}}
+
+  <!-- Features Section -->
+  {{#featuresSection}}
+  <section id="features" class="features-section bg-light">
+    <div class="container">
+
+      <!-- Main Feature Row -->
+      {{#coreFeature}}
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="{{ img }}" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>{{ title }}</h4>
+            <p class="text-black-50 mb-0">{{ description }}</p>
+          </div>
+        </div>
+      </div>
+      {{/coreFeature}}
+
+      <!-- Feature One Row -->
+      {{#firstFeature}}
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="{{ img }}" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100">
+            <div class="d-flex h-100">
+              <div class="feature-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">{{ title }}</h4>
+                <p class="mb-0 text-white-50">{{ description }}</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/firstFeature}}
+
+      <!-- Feature Two Row -->
+      {{#secondFeature}}
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="{{ img }}" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100">
+            <div class="d-flex h-100">
+              <div class="feature-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">{{ title }}</h4>
+                <p class="mb-0 text-white-50">{{ description }}</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/secondFeature}}
+
+    </div>
+  </section>
+  {{/featuresSection}}
+
+  <!-- Team Section -->
+  {{#teamSection}}
+  <section id="team" class="team-section">
+    <div class="container">
+      <div class="row">
+        {{#teamMembers}}
+        <div class="col">
+          <div class="card mx-auto h-100" style="width: 18rem; text-align: center; background-color: #161616;">
+            <img class="card-img-top avatar size-4 mx-auto" src="{{ img }}" alt="{{ name }}">
+            <div class="card-body d-flex flex-column text-white">
+              <div class="mb-4">
+                <h3 class="card-title">{{ name }}</h3>
+                <hr class="my-4">
+                <p class="card-text">{{ description }}</p>
+              </div>
+              <div class="mt-auto">
+                {{#socialNetworks}}
+                <a href="{{ link }}">
+                  <i class="fab fa-{{ name }} fa-lg"></i>
+                </a>
+                {{/socialNetworks}}
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/teamMembers}}
+      </div>
+    </div>
+  </section>
+  {{/teamSection}}
+
+  <!-- Signup Section -->
+  {{#signupSection}}
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">{{ title }}</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="{{ inputPlaceholder }}">
+            <button type="submit" class="btn btn-primary mx-auto">{{ buttonTitle }}</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {{/signupSection}}
+
+  <!-- Contact Section -->
+  {{#contactSection}}
+  <section id="contact" class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+       {{#contactItems}}
+         <div class="col">
+          <div class="card mx-auto h-100" style="width: 18rem; text-align: center; background-color: #313131;">
+              <div class="card-body text-center text-white">
+                <i class="fas fa-{{ icon }} text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">{{ name }}</h4>
+                <hr class="my-4">
+                <a href="{{ link }}" target="_blank">
+                  <div class="small text-white-50">{{ text }}</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        {{/contactItems}}
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        {{#socialNetworks}}
+        <a href="{{ link }}" target="_blank" class="mx-2">
+          <i class="fab fa-{{ name }}"></i>
+        </a>
+        {{/socialNetworks}}
+      </div>
+
+    </div>
+  </section>
+  {{/contactSection}}
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; {{ startupName }} 2020
+    </div>
+    Icons made by <a href="https://www.flaticon.com/authors/pause08" title="Pause08">Pause08</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+  </footer>
+{{/main}}

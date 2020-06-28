@@ -1,0 +1,98 @@
+{
+  "main": {
+    "startupName": "M&A Compass",
+    "vision": "Navigate the M&A Ocean",
+    "logo": "./img/logo.png",
+    "headerSection": {
+      "buttonTitle": "Learn more"
+    },
+    "aboutSection": {
+      "title": "Innovative data solution for M&A professionals",
+      "description": "Launching November 2020",
+      "opportunities": [
+        {
+          "img": "./img/icons/deals.png",
+          "headline": "47,000",
+          "description": "M&A Deals in 2019 Worldwide"
+        },
+        {
+          "img": "./img/icons/value.png",
+          "headline": "3.5 T USD",
+          "description": "The known Value of all Transactions"
+        },
+        {
+          "img": "./img/icons/growth.png",
+          "headline": "17%",
+          "description": "Of Value Increase in South East Asia"
+        }
+      ]
+    },
+    "featuresSection": {
+      "coreFeature": {
+        "title": "Data Aggregation",
+        "description": "M&A Compass gathers critical intelligence about buyers, sellers, investors and relevant deals for any given industry no matter how niche. It understands the drivers of M&A strategies and identifies disrupting and emerging industry trends for multitude of target markets:  Investment Banks, Private Equity Firms, Corporate M&A Functions, and Consultancy Firms.",
+        "img": "./img/feature-main.jpg"
+      },
+      "firstFeature": {
+        "title": "Data Analytics",
+        "description": "The M&A Compass applies Big Data, Text Mining and NLP to published and open sources to capture the 'lost' intelligence about planned  acquisitions, divestments and M&A strategies.",
+        "img": "./img/feature-1.jpg"
+      },
+      "secondFeature": {
+        "title": "Knowledge Graph",
+        "description": "Revolutionary graph database unveils disparate sets of data, typically stored in separate data silos, thereby allowing faster information retrieval and insight discovery.",
+        "img": "./img/feature-2.jpg"
+      }
+    },
+    "teamSection": {
+      "teamMembers": [
+        {
+          "img": "https://media-exp1.licdn.com/dms/image/C5103AQFsZKL88SQOwQ/profile-displayphoto-shrink_400_400/0?e=1599091200&v=beta&t=XJMLOjJP35NCRfoqDewmD4lp_GLdh7EsSQFhlNVeiEs",
+          "name": "Massimo B.",
+          "position": "CEO",
+          "description": "",
+          "socialNetworks": [
+            {
+              "name": "linkedin",
+              "link": "https://www.linkedin.com/in/massimo-bellino/"
+            }
+          ]
+        },
+        {
+          "img": "https://media-exp1.licdn.com/dms/image/C5603AQHqdRxTbnfoyA/profile-displayphoto-shrink_400_400/0?e=1599091200&v=beta&t=yK4X3E6Pm3n1290jjyuT6e60M_0Y9IebHHTXHCoH6i4",
+          "name": "Fabio Ricci",
+          "position": "CTO",
+          "description": "",
+          "socialNetworks": [
+            {
+              "name": "linkedin",
+              "link": "https://www.linkedin.com/in/fabio-ricci-semweb/"
+            }
+          ]
+        }
+      ]
+    },
+    "contactSection": {
+      "contactItems": [
+        {
+          "name": "Address",
+          "icon": "map-marked-alt",
+          "text": "79 Ayer Rajah Crescent, #05-08 Block 79, Singapore 139955",
+          "link": "https://goo.gl/maps/qjJrnWtkMAjJT3Gs7"
+        },
+        {
+          "name": "Email",
+          "icon": "envelope",
+          "text": "massimo.bellino@mandacompass.com",
+          "link": "mailto:massimo.bellino@mandacompass.com"
+        }
+      ],
+      "socialNetworks": [
+        {
+          "name": "linkedin",
+          "link": "https://www.linkedin.com/company/the-m-a-compass"
+        }
+      ]
+    }
+  }
+}
